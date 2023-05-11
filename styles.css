@@ -1,0 +1,237 @@
+*{
+    font-family: 'ABeeZee', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lightmode{
+    color: #000000;
+}
+
+/* Top container  */
+.container-fluid{
+     padding: .5rem;
+}
+.navbar{
+    padding: .5rem;
+    margin: 1.5rem 0;
+    /* background-color: rgba(255, 68, 0, 0.792); */
+}
+.navbar-toggler-icon{
+    background-color: orange;
+    border: white;
+    /* padding: 1rem; */
+}
+
+.navlinks{
+    margin: .5rem;
+    font-size: 1.2rem;
+    color: #000000;
+    /* background-color:  rgba(255, 68, 0, 0.792); */
+}
+.navlinks:hover{
+    color: rgb(113, 83, 137);
+}
+
+
+.nav-item{
+    padding: .3rem;
+}
+.darkmodeimg{
+    width: 4rem;
+    height: 4rem;
+    padding: 0px;
+    margin: 0 1rem;
+
+}
+
+/* frontpage contents */
+.frontpagecontent{
+    padding: 1rem;
+    border-radius: 2rem;
+}
+.col1content{
+    padding: 2.5rem;
+    text-align: left;
+    font-weight: 500;
+}
+#h1{
+    font-weight: 1000;
+    word-spacing: 4px;
+   
+}
+
+.frontimg{
+    width: 98%;
+    height: 105%;
+    position: relative;
+    border-radius: 60rem 15rem 30rem 20rem;
+    transition: 1s;
+}
+.frontimg:hover{
+    border-radius: 20rem 50rem 10rem 60rem;
+}
+
+.download{
+    padding: .5rem;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    /* background-color:rgba(255, 68, 0, 0.866); */
+    border-radius: 1rem;
+    transition: 1s;
+}
+.download:hover{
+    transform: scale(1.1);
+}
+.alinkprojects0{
+    text-decoration: none; 
+    color: rgb(255, 81, 0); 
+    font-size: 20px;
+    /* background-color: rgba(255, 255, 255, 0.514); */
+    padding: .5rem;
+    margin: 1rem;
+}
+
+/*  features*/
+#features{
+    margin: 3rem 3rem;
+    padding: 2rem;
+    text-align: center;
+    word-spacing: 1px;
+    font-weight: 500;
+}
+
+
+.featuresimg{
+    width: 10rem;
+    height: 10rem;
+    padding: 1.5rem;
+}
+/* span */
+span{
+    color: orangered;
+    /* background-color: yellow; */
+    margin: 0;
+    padding: 2px;
+    letter-spacing: 0;
+}
+
+/*  */
+#menu{
+    margin: 3rem 4rem;
+    padding: 1rem;
+    text-align: center;
+    word-spacing: 1px;
+    font-weight: 500;
+}
+.menuheading{
+    padding: 1rem;
+    font-size: 3rem;
+}
+.card{
+   
+    padding: 1rem;
+    margin: 2rem 0;
+    height: 25rem;
+    transition: .1s;
+    background-color:rgba(255, 68, 0, 0.866);
+    
+}
+.card-header{
+    padding: 2rem;
+    font-size: 2rem;
+    color: #000000;
+    background-color: rgba(255, 166, 0, 0.741);
+}
+.card:hover{
+    transform: scale(1.1);
+    border-radius: 1.5rem;
+}
+.card-footer{
+    padding: 1rem;
+    color: white;
+}
+h3{
+    font-weight: 500;
+}
+
+.alinkprojects{
+    text-decoration: none; 
+    color: rgb(255, 81, 0); 
+    background-color: rgba(255, 255, 255, 0.514);
+    padding: .5rem;
+    margin: 1rem;
+    font-size: 25px;
+}
+
+/* */
+#footer{
+    padding: 1.5rem 0 0 0;
+    text-align: center;
+    background-color: rgb(255, 68, 0);
+}
+.footimg{
+    width: 2rem;
+    height: 2rem;
+    margin: 1.5rem 2rem;
+}
+.alink{
+    color: rgba(240, 248, 255, 0);
+}
+@media (max-width:990px) {
+    .col1content{
+        text-align: left;
+    }
+    #menu{
+        margin: .5rem;
+        padding: 1rem;
+        text-align: center;
+        word-spacing: 1px;
+        font-weight: 500;
+    }
+    .menuheading{
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    .card{
+   
+        padding: 1rem;
+        margin: 2rem 0;
+        height: 25rem;
+        transition: .1s;
+        background-color:rgba(255, 68, 0, 0.866);
+        
+    }
+    .card-header{
+        padding: 1rem;
+        margin:0 0 2rem 0;
+        font-size: 1.5rem;
+        color: #000000;
+        background-color: rgba(255, 166, 0, 0.741);
+    }
+    .card:hover{
+        transform: scale(1.1);
+        border-radius: 1.5rem;
+    }
+    .card-footer{
+        padding: 0rem;
+        color: white;
+    }
+    .alinkprojects{
+        text-decoration: none; 
+        color: rgb(255, 81, 0); 
+        background-color: rgba(255, 255, 255, 0.514);
+        padding: .5rem;
+        margin: 2rem 0 0 0;
+        font-size: 1.2rem;
+    }
+    
+}
+
+/* dark mode from js */
+.darkmode{
+    color: white;
+    background-color: #03032d;
+}
+
