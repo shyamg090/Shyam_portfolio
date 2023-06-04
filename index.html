@@ -43,11 +43,11 @@
 
         <div id="Home">
 
-            <!-- <img class="backgroundimg" src="pics\pexels-alex-conchillos-3648850.jpg" alt="bg"> -->
+           
             <div class="container-fluid">
-                <nav class="navbar navbar-expand-lg">
+                <nav class="navbar navbar-expand-lg ">
                     <a class="navbar-brand ms-2" href="#">
-                        <img onclick="darkmodeFun()" src="pics\icons8-sun.gif"
+                        <img onclick="darkmodeFun()" alt="Darkmode" src="pics\icons8-sun.gif"
                             class="nav-link navlinks darkmodeimg">
                     </a>
 
@@ -79,7 +79,7 @@
 
 
                 <div class="row frontpagecontent">
-                    <div class="col-lg-6 col1content">
+                    <div class="col-lg-6 col1content hidden">
                         <h1 id="h1">
                             Hi,<br>
                             I'm <span>S</span>hyam. <span>G</span><br>
@@ -95,12 +95,10 @@
                             showcases my passion for creativity, innovation, and
                             problem-solving.
                         </p><br>
-                        <button class="download"><a class="alinkprojects0"
-                                href="https://drive.google.com/file/d/1-uP_WQPEHEijsOPtSJ4-WmYsHgyIuG8H/view?usp=share_link"
-                                target="_blank">Download CV</a></button>
+                        <button class="download" onclick="downloadFun()">Download CV</a></button>
                     </div>
 
-                    <div class="col-lg-6 col2content">
+                    <div class="col-lg-6 col2content hidden">
                         <img class="frontimg" src="pics\shyamg.png" alt="img">
                     </div>
                 </div>
@@ -108,7 +106,7 @@
 
         </div>
         <div id="features">
-            <h3 class="menuheading">
+            <h3 class="menuheading hidden">
                 <span>S</span>
                 <span>k</span>
                 <span>i</span>
@@ -117,43 +115,48 @@
                 <span>s</span>
             </h3>
             <div class="row">
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-6 hidden">
                     <img class="featuresimg" src="pics\html.png" alt="event">
                     <h2>
                         HTML5
                     </h2>
                 </div>
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-6 hidden">
                     <img class="featuresimg" src="pics\css-3.png" alt="menu">
                     <h2>
                         CSS3
                     </h2>
                 </div>
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-6 hidden">
                     <img class="featuresimg" src="pics\js.png" alt="quality">
                     <h2>
                         JavaScript
                     </h2>
                 </div>
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-6 hidden">
                     <img class="featuresimg" src="pics\science.png"
                         alt="delivery">
                     <h2>
                         React.js
                     </h2>
                 </div>
-                <div class="col-lg-12 col-md">
+                <div class="col-lg-6 col-md hidden">
                     <img class="featuresimg" src="pics\c-.png" alt="delivery">
                     <h2>
                         c++
                     </h2>
                 </div>
-
+                <div class="col-lg-6 col-md hidden">
+                    <img class="featuresimg" src="pics\c-.png" alt="delivery">
+                    <h2>
+                        c++
+                    </h2>
+                </div>
             </div>
         </div>
 
         <div id="menu">
-            <h3 class="menuheading">
+            <h3 class="menuheading hidden">
                 <span>P</span>
                 <span>r</span>
                 <span>o</span>
@@ -165,7 +168,7 @@
             </h3>
             <div class="row">
                 <div class="col-lg-4 ">
-                    <div class="card">
+                    <div class="card hidden">
                         <div class="card-body">
                             <h3 class="card-header">
                                 Pokedex
@@ -185,7 +188,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 ">
+                <div class="col-lg-4 hidden">
                     <div class="card">
 
                         <div class="card-body">
