@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    cursor: pointer;
 }
 
 .lightmode {
@@ -100,24 +101,20 @@
 } */
 
 .download {
-    padding: .5rem;
-    margin: 0;
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
     border-radius: 1rem;
     transition: 1s;
-}
-
-.download:hover {
-    transform: scale(1.1);
-}
-
-.alinkprojects0 {
     text-decoration: none;
     color: rgb(255, 81, 0);
     font-size: 20px;
     padding: .5rem;
     margin: 1rem;
 }
+
+.download:hover {
+    transform: scale(1.1);
+}
+
 
 /*  features*/
 #features {
@@ -256,13 +253,14 @@ h3 {
 /* dark mode from js */
 .darkmode {
     color: white;
-    background-color: #03032d;
+    background-color: #03041d;
+    /* #03032d */
 }
 
 /* scroll animations */
 .hidden{
     opacity: 0;
-    transition: all 3s;
+    transition: all 2.5s;
 }
 .show{
     opacity: 1;
