@@ -27,5 +27,5 @@ animation.forEach((div) => observer.observe(div));
 // https://drive.google.com/file/d/1-uP_WQPEHEijsOPtSJ4-WmYsHgyIuG8H/view?usp=share_link
 
 const downloadFun = ()=>{
-    window.open('https://drive.google.com/file/d/1-uP_WQPEHEijsOPtSJ4-WmYsHgyIuG8H/view?usp=share_link', '_blank');
+    window.open('https://drive.google.com/file/d/1AFq4tMxHpK8GMnqoZ1SrECAwKf3QhH6a/view?usp=drivesdk', '_blank');
 }
