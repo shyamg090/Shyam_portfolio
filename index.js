@@ -3,9 +3,10 @@
 const darkmodeFun = () => {
     document.querySelector(".lightmode").classList.toggle("darkmode");
 
-    const navlinks= document.querySelectorAll(".navlinks")
-    navlinks.forEach(navlinks.classList.toggle("darkmode"));
-    console.log(navlinks);
+    let navlinks= document.querySelectorAll('.navlinks');
+    for(let i=0; i<navlinks.length; i++){
+        navlinks[i].classList.toggle('darkmode');
+    }
 }
 
 // ----------------------------intersection observer animation--------------------------------------

@@ -91,9 +91,7 @@
     border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
   }
 }
-/* .frontimg:hover {
-    border-radius: 20rem 50rem 10rem 60rem;
-} */
+
 .download {
   /* color: rgb(255, 255, 255); */
   border-radius: 1rem;
@@ -229,12 +227,13 @@ h3 {
 /* scroll animations */
 .hidden {
   opacity: 0;
-  transition: all 2.5s;
+  transition: all 1.5s;
+  filter: blur(10px);
 }
 
 .show {
   opacity: 1;
-  /* filter: blur(0px); */
+  filter: blur(0);
 }
 
 .customPopup {
