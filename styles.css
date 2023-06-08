@@ -109,8 +109,8 @@
 
 /*  features*/
 #features {
-  margin: 3rem;
-  padding: 2rem;
+  margin: 3rem 1rem;
+  padding: 2rem 1rem;
   text-align: center;
   word-spacing: 1px;
   font-weight: 500;
@@ -140,7 +140,7 @@ span {
 }
 
 .menuheading {
-  padding: 1rem;
+  padding: 1rem 0rem;
   font-size: 3rem;
 }
 
@@ -148,11 +148,12 @@ span {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  margin: 0;
 }
 
 .card {
   padding: 1rem;
-  margin: 2rem 0;
+  /* margin: 2rem 0; */
   height: 25rem;
   transition: 0.1s;
   background-color: rgba(255, 68, 0, 0);
