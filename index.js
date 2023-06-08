@@ -1,4 +1,4 @@
-alert("Press the Sun for Dark Mode");
+// alert("Press the Sun for Dark Mode");
 
 const darkmodeFun = () => {
     document.querySelector(".lightmode").classList.toggle("darkmode");
@@ -11,7 +11,7 @@ const darkmodeFun = () => {
 
 const observer = new IntersectionObserver((entries)=>{
     entries.forEach((entry) => {
-        console.log(entry);
+        // console.log(entry);
         if(entry.isIntersecting){
             entry.target.classList.add('show');
         }else{
@@ -28,4 +28,18 @@ animation.forEach((div) => observer.observe(div));
 
 const downloadFun = ()=>{
     window.open('https://drive.google.com/file/d/1Z0xDsCFbdd-42yLqwRXU0nxMhq9mTALe/view?usp=sharing', '_blank');
+}
+
+const popupDiv= document.querySelector('.customPopup');
+const popup= document.querySelector('.popup');
+
+window.onload = ()=>{
+    console.log("helloloaded");
+     popup.style.display="block";
+     
+}
+
+const popupClicked= ()=>{
+    popup.style.display="none";
+    popupDiv.style.backgroundColor="rgba(0, 0, 0, 0)";
 }
