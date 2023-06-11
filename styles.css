@@ -147,10 +147,10 @@
 }
 @keyframes mover{
   0%{
-    transform: translateY(0);
+    transform: translateY(-0.5rem);
   }
   100%{
-    transform: translateY(10px);
+    transform: translateY(1rem);
   }
 }
 
@@ -238,7 +238,7 @@ span {
   padding: 1.5rem 0 0 0;
   text-align: center;
   background-color: rgb(255, 68, 0);
-  
+  display: flex;
 }
 
 .footimg {
@@ -249,6 +249,7 @@ span {
 
 .alink {
   color: rgba(240, 248, 255, 0);
+  width: .2rem;
 }
 /* -------------------------------------------javascript + viewport------------------------------- */
 /* dark mode from js */
@@ -313,11 +314,12 @@ span {
     text-align: left;
     padding: 1.2rem;
   }
-  #project {
+  #aboutme{
     margin: 2rem 0rem 2rem 0rem;
     padding: .1rem;
     text-align: center;
   }
+
   #p-aboutme{
     padding: 0rem;
     margin: 0;
@@ -325,8 +327,8 @@ span {
     font-size: 1.1rem;
   }
   #project {
-    margin: 0.5rem;
-    padding: 1rem;
+    margin: 0rem;
+    padding: 0.1rem;
   }
   .projectheading {
     font-size: 2rem;
