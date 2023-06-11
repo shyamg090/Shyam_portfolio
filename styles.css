@@ -209,7 +209,7 @@ span {
   height: 60%;
   margin: 0 0 1rem 0;
   padding: 1rem;
-border-radius: 0 0 1rem 1rem;
+  border-radius: 0 0 1rem 1rem;
 
   /* font-size: 1.2rem; */
   color: #000000;
@@ -312,6 +312,11 @@ border-radius: 0 0 1rem 1rem;
   .col1content {
     text-align: left;
     padding: 1.2rem;
+  }
+  #project {
+    margin: 2rem 0rem 2rem 0rem;
+    padding: .1rem;
+    text-align: center;
   }
   #p-aboutme{
     padding: 0rem;
