@@ -11,29 +11,38 @@
   color: #000000;
 }
 
-/* ------------------------Top container ----------------------------------------------- */
-.container-fluid {
-  padding: 0.5rem;
+/* span */
+span {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: orangered;
+  margin: 0;
+  padding: 0px;
+  letter-spacing: 0;
 }
 
-
+/* ------------------------Top container ----------------------------------------------- */
 .navbar {
   padding: 0.5rem;
   margin: 1rem 0;
-  /* position: sticky;
-  width: 100%;
-  top: 0%;
-  z-index: 100;
-  background-color: white; */
 }
-/* .navbar a button div{
-  filter: blur(0px);
-} */
-
-.navbar-toggler-icon {
+.navbar > a > img {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 1rem;
+}
+.navbar > .navbar-toggler {
   background-color: orange;
-  border: white;
-  /* border: none; */
+  color: #000000;
+  border: none;
+  padding: 0;
+}
+.navbar > .navbar-toggler > .navbar-toggler-icon {
+  padding: 0;
+  font-size: 1.6rem;
+}
+.navbar > #navbarNav > .navbar-nav > .nav-item {
+  padding: 0.3rem;
 }
 
 .navlinks {
@@ -41,98 +50,102 @@
   font-size: 1.2rem;
   color: #000000;
 }
-
 .navlinks:hover {
   color: orangered;
 }
 
-.nav-item {
-  padding: 0.3rem;
-}
-
-.darkmodeimg {
-  width: 4rem;
-  height: 4rem;
-  margin: 0 1rem;
-}
-
 /*------------------------------------- frontpage contents ---------------------------------------------*/
-.frontpagecontent {
+.container-fluid {
+  padding: 0.5rem;
+}
+.container-fluid .frontpagecontent {
   padding: 1rem;
   border-radius: 2rem;
 }
-
-.col1content {
+.container-fluid .frontpagecontent > .col1content {
   padding: 2.5rem;
   text-align: left;
   font-weight: 500;
   animation: ease-in-out;
 }
-
-#h1 {
+.container-fluid .frontpagecontent > .col1content > h1 {
   font-weight: 1000;
   word-spacing: 4px;
 }
-
-.frontimg {
+.container-fluid .frontpagecontent > .col1content > h1 > span {
+  font-size: 2.5rem;
+}
+.container-fluid .frontpagecontent > .col1content > button {
+  /* color: rgb(255, 255, 255); */
+  border-radius: 1rem;
+  transition: 1s;
+  text-decoration: none;
+  background-color: cornsilk;
+  color: orangered;
+  font-size: 20px;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+.container-fluid .frontpagecontent > .col1content button:hover {
+  background-color: orangered;
+  color: cornsilk;
+}
+.container-fluid .frontpagecontent > .col2content > img {
   width: 98%;
   height: 105%;
   position: relative;
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
   /* transition: 1s; */
   animation: morphing 10s infinite;
-  box-shadow: 5px 0px 5px #0B2447;
+  box-shadow: 5px 0px 5px #f3d706;
 }
-
 @keyframes morphing {
   0% {
     border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
-    box-shadow: 0px 10px 5px #576CBC;
   }
   25% {
     border-radius: 58% 42% 75% 25%/76% 46% 54% 24%;
   }
   50% {
     border-radius: 50% 50% 33% 67%/55% 27% 73% 45%;
-    box-shadow: 5px 0px 5px #A5D7E8;
   }
   75% {
     border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
   }
 }
 
-.download {
-  /* color: rgb(255, 255, 255); */
-  border-radius: 1rem;
-  transition: 1s;
-  text-decoration: none;
-  color: orangered;
-  font-size: 20px;
-  padding: 0.5rem;
-  margin: 1rem;
-}
-
-.download:hover {
-  transform: scale(1.1);
-}
-
 /* ----------------------------------------about me------------------------------------------------------ */
-#aboutme{
+#aboutme {
   margin: 3rem 1rem 0rem 1rem;
   padding: 2rem 1rem;
   text-align: center;
   word-spacing: 1px;
   font-weight: 500;
-
 }
-.row-aboutme{
+#aboutme > .row {
   padding: 1rem;
   /* box-shadow: 0 5px 5px rgba(255, 68, 0, 0.536); */
   /* border-radius: 1rem; */
 }
-#p-aboutme{
+#aboutme > .row > .hidden > img {
+  width: 10rem;
+  height: 10rem;
+  padding: 1.5rem;
+  /* margin: .5rem; */
+  animation: mover linear infinite 1s alternate;
+  /* alternative -- to make to move both up and down */
+}
+@keyframes mover {
+  to {
+    transform: translateY(-0.5rem);
+  }
+}
+#aboutme > .row > .row-text {
+  text-align: left;
+}
+#aboutme > .row > .row-text > p {
   padding: 1rem;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   text-align: left;
   font-size: 1.1rem;
 }
@@ -145,8 +158,7 @@
   word-spacing: 1px;
   font-weight: 500;
 }
-
-.featuresimg {
+#features > .row > .hidden > img {
   width: 10rem;
   height: 10rem;
   padding: 1.5rem;
@@ -154,89 +166,74 @@
   animation: mover linear infinite 1s alternate;
   /* alternative -- to make to move both up and down */
 }
-@keyframes mover{
-  to{
+@keyframes mover {
+  to {
     transform: translateY(-0.5rem);
   }
 }
 
-/* span */
-span {
-  color: orangered;
-  margin: 0;
-  padding: 0px;
-  letter-spacing: 0;
-}
-
 /* -------------------------------------------projects--------------------------------------------- */
 #project {
-  margin: 2rem 1rem 4rem 1rem;
-  padding: 1rem;
+  margin: 2rem 0 3rem 0;
+  padding: 0.3rem;
   text-align: center;
-  letter-spacing: .1px;
+  letter-spacing: 0.1px;
   font-weight: 500;
 }
-
-.projectheading {
-  padding: 2rem 0rem;
-  font-size: 3rem;
-}
-
-.row {
+#project > .row {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   margin: 0;
-
 }
-
-.card {
-  padding: 0rem;
-  /* margin: 2rem 0; */
-  height: 100%;
+#project > .row > .col-lg-4 > .card {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  height: 85%;
   transition: 0.1s;
   background-color: inherit;
   border: none;
-}
-
-
-.card-header {
-  padding: 2rem;
-  font-size: 2rem;
-
-  border: none;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: #000000;
   background-color: cornsilk;
   box-shadow: 0 5px 5px rgba(255, 68, 0, 0.536);
 }
-
-.card-text {
-  height: 60%;
-  margin: 0 0 1rem 0;
+#project > .row > .col-lg-4 > .card > div {
   padding: 1rem;
-  border-radius: 0 0 1rem 1rem;
-
-  /* font-size: 1.2rem; */
-  color: #000000;
-  background-color: cornsilk;
-  box-shadow: 0 5px 5px rgba(255, 68, 0, 0.536);
 }
-
-/*h3 {
-  font-weight: 500;
-} */
-
-.alinkprojects {
-  text-decoration: none;
-  background-color: rgba(255, 0, 0, 0.808);
-  color: cornsilk;
-  padding: 0.5rem;
-  margin: 1.5rem;
+#project > .row > .col-lg-4 > .card > div > h3 {
   font-size: 1.5rem;
+  color: #000000;
+}
+#project > .row > .col-lg-4 > .card > .text {
+  padding: 0.4rem 0rem;
+  height: 50%;
+}
+#project > .row > .col-lg-4 > .card > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0.2rem 0;
+  padding: 0.1rem;
+}
+#project > .row > .col-lg-4 > .card > div > a {
+  text-decoration: none;
+  background-color: orangered;
+  color: cornsilk;
+  width: 5rem;
+  padding: 0.1rem;
+  margin: 0.8rem;
+  font-size: 1.4rem;
   box-shadow: 0 5px 5px rgb(241, 205, 191);
-  border-radius: 1rem;
-  border: none;
+  border-radius: 0.4rem;
+  border: 1rem black;
+}
+#project > .row > .col-lg-4 > .card > div > a:hover {
+  background-color: cornsilk;
+  color: orangered;
 }
 
 /* -----------------------------------------------------footer-----------------------------------------*/
@@ -245,18 +242,19 @@ span {
   text-align: center;
   background-color: rgb(255, 68, 0);
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
-.footimg {
+#footer > .row > .col > a {
+  color: rgba(240, 248, 255, 0);
+  width: 0.2rem;
+}
+#footer > .row > .col > a > img {
   width: 2.1rem;
   height: 2.1rem;
-  margin: 1.5rem 1.4rem;
+  margin: 1rem;
 }
 
-.alink {
-  color: rgba(240, 248, 255, 0);
-  width: .2rem;
-}
 /* -------------------------------------------javascript + viewport------------------------------- */
 /* dark mode from js */
 .darkmode {
@@ -311,22 +309,27 @@ span {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .popup {
     height: 38%;
     width: 90%;
   }
   .col1content {
     text-align: left;
-    padding: 1.2rem;
+    padding: 1rem;
   }
-  #aboutme{
+  .col1content > .col1content > button {
+    font-size: 0.5rem;
+  }
+  #aboutme {
     margin: 2rem 0rem 2rem 0rem;
-    padding: .1rem;
+    padding: 0.1rem;
     text-align: center;
   }
-
-  #p-aboutme{
+  #aboutme > .row > .row-text {
+    text-align: center;
+  }
+  #aboutme > .row > .row-text > p {
     padding: 0rem;
     margin: 0;
     text-align: center;
@@ -336,24 +339,26 @@ span {
     margin: 0rem;
     padding: 0.1rem;
   }
-  .projectheading {
+  #project > h3 {
     font-size: 2rem;
   }
-  .card {
+  #project > .card {
     background-color: rgba(255, 68, 0, 0);
     border: none;
     margin: 1rem 0px;
+    padding: 0;
   }
-  .card-text{
-    font-size: large;
+  #project > .card > div {
+    margin: 1rem 0;
+    padding: 0;
+    font-size: medium;
+  }
+  #project > .card > .text {
+    height: -moz-fit-content;
     height: fit-content;
   }
-  .card-header {
-    padding: 1rem;
-    font-size: 1.5rem;
+  #project > .card > div > a {
+    padding: 0;
+    margin: 0 1rem;
   }
-  .alinkprojects {
-    margin: 3rem 0 0 0;
-    font-size: 1.2rem;
-  }
-}
+}/*# sourceMappingURL=styles.css.map */

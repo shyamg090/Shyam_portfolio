@@ -68,7 +68,7 @@
                 <a class="navbar-brand ms-2" href="#">
                     <img onclick="darkmodeFun()" alt="Darkmode"
                         src="pics\icons8-sun.gif"
-                        class="nav-link navlinks darkmodeimg">
+                        class="nav-link navlinks">
                 </a>
 
                 <button class="navbar-toggler" type="button"
@@ -78,7 +78,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse text-center" id="navbarNav">
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto me-5">
                         <li class="nav-item">
                             <a class="nav-link navlinks " href="#Home">Home</a>
@@ -105,33 +105,33 @@
                 <div class="row frontpagecontent">
 
                     <div class="col-lg-6 col1content hidden">
-                        <h1 id="h1">
+                        <h1>
                             Hi,<br>
-                            I'm <span>S</span>hyam. <span>G</span><br>
+                            I'm <span>s</span>hyam. <span>G</span><br>
 
                         </h1>
                         <h2>
                             Front-End Web Developer
                         </h2><br>
-                        <p id="p">
+                        <p>
                             I am thrilled to have you here, exploring my work
                             and getting to know me better. This website serves
                             as a window into my professional journey and
                             showcases my passion for creativity, innovation, and
                             problem-solving.
                         </p><br>
-                        <button class="download alinkprojects0"
+                        <button 
                             onclick="downloadFun() ">Download CV</a></button>
                 </div>
 
                 <div class="col-lg-6 col2content hidden">
-                    <img class="frontimg" src="pics\shyamg.png" alt="img">
+                    <img src="pics\shyamg.png" alt="img">
                 </div>
             </div>
         </div>
 
         <div id="aboutme">
-                <h3 class="projectheading hidden">
+                <h3 class="hidden">
                     <span>A</span>
                     <span>b</b></span>
                     <span>o</span>
@@ -141,14 +141,14 @@
                     <span>e</span>
                 </h3>
 
-                <div class="row row-aboutme">
+                <div class="row">
                     <div class="col-lg-4 col2content hidden">
-                        <img class="featuresimg" src="pics\congratulation.png"
+                        <img src="pics\congratulation.png"
                             alt="img">
                     </div>
 
-                    <div class="col-lg-8 hidden">
-                        <p id="p-aboutme">
+                    <div class="col-lg-8 row-text hidden">
+                        <p>
                             Currently, I am a dedicated student at Sapthagiri
                             College of Engineering, where I am pursuing my
                             bachelor's degree in Information Science And Engineering.
@@ -165,8 +165,8 @@
                             alt="img">
                     </div>
 
-                    <div class="col-lg-8 hidden">
-                        <p id="p-aboutme">
+                    <div class="col-lg-8 row-text hidden">
+                        <p>
                             After successfully completing my schooling, I
                             pursued my pre-university education at R.N.S Composite
                             Pre-University College. During this phase, I
@@ -183,8 +183,8 @@
                             alt="img">
                     </div>
 
-                    <div class="col-lg-8 hidden">
-                        <p id="p-aboutme">
+                    <div class="col-lg-8 row-text hidden">
+                        <p>
                             I completed my primary and secondary education at
                             Cordial High School, where I developed a strong
                             foundation in various subjects. These formative
@@ -198,7 +198,7 @@
         </div>
 
         <div id="features">
-            <h3 class="projectheading hidden">
+            <h3 class="hidden">
                 <span>S</span>
                 <span>k</span>
                 <span>i</span>
@@ -208,25 +208,25 @@
             </h3>
             <div class="row">
                 <div class="col-lg-6 col-md-6 hidden">
-                    <img class="featuresimg" src="pics\html.png" alt="html">
+                    <img src="pics\html.png" alt="html">
                     <h3>
                         HTML5
                     </h3>
                 </div>
                 <div class="col-lg-6 col-md-6 hidden">
-                    <img class="featuresimg" src="pics\css-3.png" alt="css">
+                    <img src="pics\css-3.png" alt="css">
                     <h3>
                         CSS3
                     </h3>
                 </div>
                 <div class="col-lg-6 col-md-6 hidden">
-                    <img class="featuresimg" src="pics\js.png" alt="javascript">
+                    <img src="pics\js.png" alt="javascript">
                     <h3>
                         JavaScript
                     </h3>
                 </div>
                 <div class="col-lg-6 col-md-6 hidden">
-                    <img class="featuresimg" src="pics\science.png"
+                    <img src="pics\science.png"
                         alt="react js">
 
                     <h3>
@@ -234,13 +234,13 @@
                     </h3>
                 </div>
                 <div class="col-lg-6 col-md hidden">
-                    <img class="featuresimg" src="pics\sass.png" alt="SASS">
+                    <img src="pics\sass.png" alt="SASS">
                     <h3>
                         SASS
                     </h3>
                 </div>
                 <div class="col-lg-6 col-md hidden">
-                    <img class="featuresimg" src="pics\c-.png" alt="c++">
+                    <img src="pics\c-.png" alt="c++">
                     <h3>
                         C++
                     </h3>
@@ -250,7 +250,7 @@
         </div>
 
         <div id="project">
-            <h3 class="projectheading hidden">
+            <h3 class="hidden">
                 <span>P</span>
                 <span>r</span>
                 <span>o</span>
@@ -263,56 +263,81 @@
             <div class="row">
                 <div class="col-lg-4 ">
                     <div class="card hidden">
-                        <div class="card-body">
-                            <h3 class="card-header">
+                        <div>
+                            <h3>
                                 Pokedex
                             </h3>
-                            <h4 class="card-text">
+                        </div>
+                        <div class="text">
+                            <h4>
                                 This is a pokedex
                                 website contains pokemon names , images.I've
                                 used React.js
                                 , PokeAPI and pure CSS for styling.
 
                             </h4>
-                            <a class=" card-footer alinkprojects "
-                                href="https://pokedex-by-shyam.netlify.app/ "
-                                target="_blank">Check Out</a>
                         </div>
+
+
+                        <div>
+                            <a 
+                            href="https://pokedex-by-shyam.netlify.app/ "
+                            target="_blank">Link</a>
+                            <a 
+                            href="https://github.com/shyamg090/Pokedex-React-project"
+                            target="_blank">Github</a>
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-lg-4 hidden">
                     <div class="card">
-
-                        <div class="card-body">
-                            <h3 class="card-header">
+                        <div>
+                            <h3>
                                 FoodCarti
                             </h3>
-                            <h4 class="card-text"> This is a Food Catering
+                        </div>
+                        <div class="text">
+                            <h4> This is a Food Catering
                                 website, I've just used HTML,CSS and Bootstrap
                                 its not functional but I'll work on that soon!!.
                             </h4>
-                            <a class=" card-footer alinkprojects "
-                                href="https://foodcarti.netlify.app/ "
-                                target="_blank">Check Out</a>
                         </div>
+
+                        <div>
+                            <a 
+                            href="https://foodcarti.netlify.app/ "
+                            target="_blank">Link</a>
+                            <a 
+                            href="https://github.com/shyamg090/foodcarti"
+                            target="_blank">Github</a>
+                        </div> 
+
                     </div>
                 </div>
                 <div class="col-lg-4 hidden">
                     <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-header">
-                                Todo-List
-                            </h3>
-                            <h4 class="card-text">This is a Todo-List that is
-                                built using React.JS and pure CSS.
-                                This is responsive and can store all of your
-                                todo's in browsers local storage.
-                            </h4>
-                            <a class=" card-footer alinkprojects "
+                            <div>
+                                <h3 >
+                                    Todo-List
+                                </h3>
+                            </div>   
+                            <div class="text">
+                                <h4>This is a Todo-List that is
+                                    built using React.JS and pure CSS.
+                                    This is responsive and can store all of your
+                                    todo's in browsers local storage.
+                                </h4>
+                            </div>                             
+                            <div>
+                                <a 
                                 href="https://todo-by-shyam.netlify.app/ "
-                                target="_blank">Check
-                                Out</a>
-                        </div>
+                                target="_blank">Link</a>
+                                <a 
+                                href="https://github.com/shyamg090/todo-react"
+                                target="_blank">Github</a>
+                            </div>
+                             
                     </div>
                 </div>
             </div>
@@ -357,23 +382,23 @@
     </div>
 
     <footer id="footer">
-        <div class="row rowfooter">
-            <div class="col fut">
-                <a class="alink"
+        <div class="row">
+            <div class="col">
+                <a 
                     href="https://www.linkedin.com/in/shyam-g-6712a522b">
-                    <img class="footimg" src="pics\linkedin.png" alt="linkedin">
+                    <img src="pics\linkedin.png" alt="linkedin">
                 </a>
-                <a class="alink" href="https://twitter.com/_Shyam_G">
-                    <img class="footimg" src="pics\twitter.png" alt="twit">
+                <a  href="https://twitter.com/_Shyam_G">
+                    <img src="pics\twitter.png" alt="twit">
                 </a>
-                <a class="alink"
+                <a 
                     href="https://github.com/shyamg090?tab=repositories">
-                    <img class="footimg" src="pics\github-sign.png"
+                    <img src="pics\github-sign.png"
                         alt="github">
                 </a>
-                <a class="alink"
+                <a 
                     href="https://www.instagram.com/shyam_g__/">
-                    <img class="footimg" src="pics\instagram.png"
+                    <img src="pics\instagram.png"
                         alt="insta">
                 </a>
             </div>
