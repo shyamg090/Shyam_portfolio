@@ -37,7 +37,7 @@ span {
   border: none;
 }
 .navbar > button > .navbar-toggler-icon {
-  font-size: 1.6rem;
+  font-size: 20px;
 }
 .navbar > #navbarNav > .navbar-nav > .nav-item {
   padding: 0.3rem;
@@ -54,8 +54,7 @@ span {
 
 /*------------------------------------- frontpage contents ---------------------------------------------*/
 .container-fluid .frontpagecontent {
-  padding: 1rem;
-  border-radius: 2rem;
+  padding: 0.5rem;
 }
 .container-fluid .frontpagecontent > .col1content {
   padding: 2.5rem;
@@ -111,7 +110,7 @@ span {
 
 /* ----------------------------------------about me------------------------------------------------------ */
 #aboutme {
-  margin: 3rem 0 1rem 0;
+  margin: 4rem 0 1rem 0;
   padding: 2rem 1rem;
   text-align: center;
   word-spacing: 1px;
@@ -170,7 +169,7 @@ span {
 
 /* -------------------------------------------projects--------------------------------------------- */
 #project {
-  margin: 0rem;
+  margin: 2rem 0 2rem 0;
   padding: 0.3rem;
   text-align: center;
   letter-spacing: 0.1px;
@@ -185,8 +184,7 @@ span {
 }
 #project > .row > .col-lg-4 > .card {
   margin: 1rem 0;
-  padding: 0.5rem;
-  height: 85%;
+  padding: 2rem;
   transition: 0.1s;
   background-color: inherit;
   border: none;
@@ -198,26 +196,22 @@ span {
   background-color: cornsilk;
   box-shadow: 0 5px 5px rgba(255, 68, 0, 0.536);
 }
-#project > .row > .col-lg-4 > .card > div {
-  padding: 1rem;
-}
 #project > .row > .col-lg-4 > .card > div > h3 {
   font-size: 1.5rem;
   color: #000000;
 }
 #project > .row > .col-lg-4 > .card > .text {
   padding: 0.4rem 0rem;
-  height: 50%;
 }
-#project > .row > .col-lg-4 > .card > div {
+#project > .row > .col-lg-4 > .card > .plink {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  margin: 0.2rem 0;
   padding: 0.1rem;
   position: inherit;
 }
-#project > .row > .col-lg-4 > .card > div > a {
+#project > .row > .col-lg-4 > .card > .plink > a {
   text-decoration: none;
   background-color: orangered;
   color: cornsilk;
@@ -229,7 +223,7 @@ span {
   border-radius: 0.4rem;
   border: 1rem black;
 }
-#project > .row > .col-lg-4 > .card > div > a:hover {
+#project > .row > .col-lg-4 > .card > .plink > a:hover {
   background-color: cornsilk;
   color: orangered;
 }
@@ -325,12 +319,12 @@ span {
     height: 38%;
     width: 90%;
   }
-  .col1content {
+  .container-fluid > .frontpagecontent > .col1content {
     text-align: left;
     padding: 1rem;
   }
-  .col1content > .col1content > button {
-    font-size: 0.5rem;
+  .container-fluid > .frontpagecontent > .col1content > button {
+    font-size: 1rem;
   }
   #aboutme {
     margin: 2rem 0rem 2rem 0rem;
@@ -368,13 +362,13 @@ span {
   #project > .card > .text {
     height: 35rem;
   }
-  #project > .card > div > a {
+  #project > .card > .plink > a {
     padding: 0;
     margin: 0 1rem;
   }
-  #footer > .row > .col > .footimg {
-    width: 0.5rem;
-    height: 0.5rem;
-    margin: 0.4rem;
+  #footer > .row > .col > a > .footimg {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.5rem;
   }
 }/*# sourceMappingURL=styles.css.map */

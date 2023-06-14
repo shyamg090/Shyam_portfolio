@@ -53,7 +53,7 @@ span {
     border: none;
 
     > .navbar-toggler-icon {
-      font-size: 1.6rem;
+      font-size: 20px;
     }
   }
 
@@ -77,8 +77,8 @@ span {
 .container-fluid {
 
   .frontpagecontent {
-    padding: 1rem;
-    border-radius: 2rem;
+    padding: .5rem;
+    // border-radius: 2rem;
 
     > .col1content {
       padding: 2.5rem;
@@ -142,7 +142,7 @@ span {
 
 /* ----------------------------------------about me------------------------------------------------------ */
 #aboutme {
-  margin: 3rem 0 1rem 0;
+  margin: 4rem 0 1rem 0;
   padding: 2rem 1rem;
   text-align: center;
   word-spacing: 1px;
@@ -186,11 +186,12 @@ span {
 
 /* -------------------------------------------projects--------------------------------------------- */
 #project {
-  margin: 0rem;
+  margin: 2rem 0 2rem 0;
   padding: 0.3rem;
   text-align: center;
   letter-spacing: 0.1px;
   font-weight: 500;
+  // height: 80vh;
 
   > .row {
     display: flex;
@@ -200,8 +201,7 @@ span {
 
     > .col-lg-4 > .card {
       margin: 1rem 0;
-      padding: 0.5rem;
-      height: 85%;
+      padding: 2rem;
       transition: 0.1s;
       background-color: inherit;
       border: none;
@@ -216,7 +216,8 @@ span {
       box-shadow: 0 5px 5px rgba(255, 68, 0, 0.536);
 
       > div {
-        padding: 1rem;
+        // padding: 1rem;
+        // justify-content: center;
 
         > h3 {
           font-size: 1.5rem;
@@ -226,16 +227,15 @@ span {
 
       > .text {
         padding: 0.4rem 0rem;
-        // margin: .3rem 0;
-        height: 50%;
         
-      }
+        }
 
-      > div {
+      > .plink{
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
-        margin: 0.2rem 0;
+        
         padding: 0.1rem;
         position: inherit;
 
@@ -355,12 +355,12 @@ span {
     width: 90%;
   }
 
-  .col1content {
+  .container-fluid > .frontpagecontent > .col1content {
     text-align: left;
     padding: 1rem;
 
-    > .col1content > button {
-      font-size: 0.5rem;
+     > button {
+      font-size: 1rem;
     }
   }
 
@@ -404,16 +404,16 @@ span {
         height: 35rem;
       }
 
-      > div > a {
+      > .plink > a {
         padding: 0;
         margin: 0 1rem;
       }
     }
   }
 
-  #footer > .row> .col> .footimg{
-    width: .5rem;
-    height: .5rem;
-    margin: .4rem;
+  #footer > .row > .col> a >.footimg{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: .5rem;
   }
 }
