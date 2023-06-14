@@ -31,14 +31,12 @@ span {
   height: 4rem;
   margin: 0 1rem;
 }
-.navbar > .navbar-toggler {
+.navbar > button {
   background-color: orange;
   color: #000000;
   border: none;
-  padding: 0;
 }
-.navbar > .navbar-toggler > .navbar-toggler-icon {
-  padding: 0;
+.navbar > button > .navbar-toggler-icon {
   font-size: 1.6rem;
 }
 .navbar > #navbarNav > .navbar-nav > .nav-item {
@@ -55,9 +53,6 @@ span {
 }
 
 /*------------------------------------- frontpage contents ---------------------------------------------*/
-.container-fluid {
-  padding: 0.5rem;
-}
 .container-fluid .frontpagecontent {
   padding: 1rem;
   border-radius: 2rem;
@@ -73,7 +68,7 @@ span {
   word-spacing: 4px;
 }
 .container-fluid .frontpagecontent > .col1content > h1 > span {
-  font-size: 2.5rem;
+  font-size: inherit;
 }
 .container-fluid .frontpagecontent > .col1content > button {
   /* color: rgb(255, 255, 255); */
@@ -82,7 +77,7 @@ span {
   text-decoration: none;
   background-color: cornsilk;
   color: orangered;
-  font-size: 20px;
+  font-size: 1rem;
   padding: 0.5rem;
   margin: 1rem;
 }
@@ -116,7 +111,7 @@ span {
 
 /* ----------------------------------------about me------------------------------------------------------ */
 #aboutme {
-  margin: 3rem 1rem 0rem 1rem;
+  margin: 3rem 0 1rem 0;
   padding: 2rem 1rem;
   text-align: center;
   word-spacing: 1px;
@@ -126,6 +121,9 @@ span {
   padding: 1rem;
   /* box-shadow: 0 5px 5px rgba(255, 68, 0, 0.536); */
   /* border-radius: 1rem; */
+}
+#aboutme > .row > .row-fig {
+  padding: 0;
 }
 #aboutme > .row > .hidden > img {
   width: 10rem;
@@ -144,15 +142,13 @@ span {
   text-align: left;
 }
 #aboutme > .row > .row-text > p {
-  padding: 1rem;
-  margin: 0.5rem 0;
   text-align: left;
   font-size: 1.1rem;
 }
 
 /* -------------------------------------features-----------------------------------------------------*/
 #features {
-  margin: 0rem 1rem;
+  margin: 0rem;
   padding: 2rem 1rem;
   text-align: center;
   word-spacing: 1px;
@@ -174,7 +170,7 @@ span {
 
 /* -------------------------------------------projects--------------------------------------------- */
 #project {
-  margin: 2rem 0 3rem 0;
+  margin: 0rem;
   padding: 0.3rem;
   text-align: center;
   letter-spacing: 0.1px;
@@ -185,6 +181,7 @@ span {
   justify-content: space-evenly;
   width: 100%;
   margin: 0;
+  position: relative;
 }
 #project > .row > .col-lg-4 > .card {
   margin: 1rem 0;
@@ -218,12 +215,13 @@ span {
   flex-wrap: wrap;
   margin: 0.2rem 0;
   padding: 0.1rem;
+  position: inherit;
 }
 #project > .row > .col-lg-4 > .card > div > a {
   text-decoration: none;
   background-color: orangered;
   color: cornsilk;
-  width: 5rem;
+  width: 7.2rem;
   padding: 0.1rem;
   margin: 0.8rem;
   font-size: 1.4rem;
@@ -239,19 +237,29 @@ span {
 /* -----------------------------------------------------footer-----------------------------------------*/
 #footer {
   padding: 1.5rem 0 0 0;
+  margin: 0;
   text-align: center;
   background-color: rgb(255, 68, 0);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+#footer > .row {
+  width: 100%;
+}
+#footer > .row > .col {
+  margin: 0;
+  padding: 0;
+  width: 60%;
+}
 #footer > .row > .col > a {
   color: rgba(240, 248, 255, 0);
-  width: 0.2rem;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-#footer > .row > .col > a > img {
-  width: 2.1rem;
-  height: 2.1rem;
+#footer > .row > .col > a > .footimg {
+  width: 2rem;
+  height: 2rem;
   margin: 1rem;
 }
 
@@ -310,6 +318,9 @@ span {
 }
 
 @media screen and (max-width: 650px) {
+  span {
+    font-size: 1.5rem;
+  }
   .popup {
     height: 38%;
     width: 90%;
@@ -325,15 +336,14 @@ span {
     margin: 2rem 0rem 2rem 0rem;
     padding: 0.1rem;
     text-align: center;
+    padding: 1rem;
   }
   #aboutme > .row > .row-text {
     text-align: center;
   }
   #aboutme > .row > .row-text > p {
-    padding: 0rem;
-    margin: 0;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   #project {
     margin: 0rem;
@@ -343,10 +353,12 @@ span {
     font-size: 2rem;
   }
   #project > .card {
-    background-color: rgba(255, 68, 0, 0);
     border: none;
     margin: 1rem 0px;
     padding: 0;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: small;
   }
   #project > .card > div {
     margin: 1rem 0;
@@ -354,11 +366,15 @@ span {
     font-size: medium;
   }
   #project > .card > .text {
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 35rem;
   }
   #project > .card > div > a {
     padding: 0;
     margin: 0 1rem;
+  }
+  #footer > .row > .col > .footimg {
+    width: 0.5rem;
+    height: 0.5rem;
+    margin: 0.4rem;
   }
 }/*# sourceMappingURL=styles.css.map */
