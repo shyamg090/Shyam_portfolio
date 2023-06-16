@@ -29,7 +29,7 @@ animation.forEach((div) => observer.observe(div));
 // ----------------------------download link for resume + links(social media)--------------------------------------
 // https://drive.google.com/file/d/1-uP_WQPEHEijsOPtSJ4-WmYsHgyIuG8H/view?usp=share_link
 const downloadFun = ()=>{
-    window.open('https://drive.google.com/file/d/1Z0xDsCFbdd-42yLqwRXU0nxMhq9mTALe/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1KIgaBw-8B11UUg7Kmvb4pqW6Do40Fw6P/view?usp=drivesdk', '_blank');
 }
 
 const github =()=>{
