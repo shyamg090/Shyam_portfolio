@@ -95,22 +95,43 @@ span {
         }
       }
 
-      > button {
-        /* color: rgb(255, 255, 255); */
-        border-radius: 1rem;
-        transition: 1s;
-        text-decoration: none;
-        background-color: cornsilk;
-        color: orangered;
-        font-size: 1rem;
-        padding: 0.5rem;
-        margin: 1rem;
-      }
+      > .download_div{
+          display: flex;
+          // flex-wrap: wrap;
+          justify-content: flex-start;
+          align-items: center;
+          margin: 2rem 2rem 0 0;
 
-      button:hover {
-        background-color: orangered;
-        color: cornsilk;
-      }
+        > .button > button{
+          /* color: rgb(255, 255, 255); */
+          border-radius: 1rem;
+          transition: 1s;
+          text-decoration: none;
+          background-color: cornsilk;
+          color: orangered;
+          font-size: 1.5rem;
+          padding: 0.5rem;
+          margin-right: 1rem;
+        }
+  
+        button:hover {
+          background-color: orangered;
+          color: cornsilk;
+        }
+
+        > .links{
+          display: flex;
+          align-items: center;
+          margin: 2rem 0;
+          // margin: .4rem;
+
+          > img{
+            width: 3rem;
+            height: 3rem;
+            margin: 1rem;
+          }
+        } 
+      } 
     }
 
     > .col2content > img {
@@ -278,16 +299,13 @@ span {
       margin: 0;
       padding: 0;
       width: 60%;
-      > a {
-        color: rgba(240, 248, 255, 0);
-        width: fit-content;
 
         > .footimg {
           width: 2rem;
           height: 2rem;
           margin: 1rem;
         }
-      }
+
     }
   }
 }
@@ -359,9 +377,22 @@ span {
     text-align: left;
     padding: 1rem;
 
-     > button {
-      font-size: 1rem;
-    }
+     >.download_div {
+      display: flex;
+      flex-wrap: wrap;
+      // flex-direction: column;
+
+      > .button > button {
+        font-size: 1rem;
+        // margin-right: 3rem;
+      }
+
+      > .links > img{
+        width: 2rem;
+        height: 2rem;
+        margin: .5rem;
+      }
+     }
   }
 
   #aboutme {
@@ -411,7 +442,7 @@ span {
     }
   }
 
-  #footer > .row > .col> a >.footimg{
+  #footer > .row > .col >.footimg{
     width: 1.5rem;
     height: 1.5rem;
     margin: .5rem;

@@ -69,20 +69,36 @@ span {
 .container-fluid .frontpagecontent > .col1content > h1 > span {
   font-size: inherit;
 }
-.container-fluid .frontpagecontent > .col1content > button {
+.container-fluid .frontpagecontent > .col1content > .download_div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2rem 2rem 0 0;
+}
+.container-fluid .frontpagecontent > .col1content > .download_div > .button > button {
   /* color: rgb(255, 255, 255); */
   border-radius: 1rem;
   transition: 1s;
   text-decoration: none;
   background-color: cornsilk;
   color: orangered;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 0.5rem;
-  margin: 1rem;
+  margin-right: 1rem;
 }
-.container-fluid .frontpagecontent > .col1content button:hover {
+.container-fluid .frontpagecontent > .col1content > .download_div button:hover {
   background-color: orangered;
   color: cornsilk;
+}
+.container-fluid .frontpagecontent > .col1content > .download_div > .links {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+.container-fluid .frontpagecontent > .col1content > .download_div > .links > img {
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem;
 }
 .container-fluid .frontpagecontent > .col2content > img {
   width: 98%;
@@ -246,12 +262,7 @@ span {
   padding: 0;
   width: 60%;
 }
-#footer > .row > .col > a {
-  color: rgba(240, 248, 255, 0);
-  width: -moz-fit-content;
-  width: fit-content;
-}
-#footer > .row > .col > a > .footimg {
+#footer > .row > .col > .footimg {
   width: 2rem;
   height: 2rem;
   margin: 1rem;
@@ -323,8 +334,17 @@ span {
     text-align: left;
     padding: 1rem;
   }
-  .container-fluid > .frontpagecontent > .col1content > button {
+  .container-fluid > .frontpagecontent > .col1content > .download_div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-fluid > .frontpagecontent > .col1content > .download_div > .button > button {
     font-size: 1rem;
+  }
+  .container-fluid > .frontpagecontent > .col1content > .download_div > .links > img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
   }
   #aboutme {
     margin: 2rem 0rem 2rem 0rem;
@@ -366,7 +386,7 @@ span {
     padding: 0;
     margin: 0 1rem;
   }
-  #footer > .row > .col > a > .footimg {
+  #footer > .row > .col > .footimg {
     width: 1.5rem;
     height: 1.5rem;
     margin: 0.5rem;
