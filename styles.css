@@ -23,18 +23,17 @@ span {
 
 /* ------------------------Top container ----------------------------------------------- */
 .navbar {
-  padding: 0.5rem;
   margin: 1rem 0;
 }
 .navbar > a > img {
   width: 4rem;
   height: 4rem;
-  margin: 0 1rem;
 }
 .navbar > button {
   background-color: orange;
   color: #000000;
   border: none;
+  margin: 0 1rem;
 }
 .navbar > button > .navbar-toggler-icon {
   font-size: 20px;
@@ -101,8 +100,10 @@ span {
   margin: 1rem;
 }
 .container-fluid .frontpagecontent > .col2content > img {
-  width: 98%;
-  height: 105%;
+  width: 90%;
+  height: 90%;
+  left: 4rem;
+  background-color: #ffc800;
   position: relative;
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
   /* transition: 1s; */
@@ -329,6 +330,9 @@ span {
   .popup {
     height: 38%;
     width: 90%;
+  }
+  .container-fluid > .frontpagecontent > .col2content > img {
+    left: 1rem;
   }
   .container-fluid > .frontpagecontent > .col1content {
     text-align: left;
