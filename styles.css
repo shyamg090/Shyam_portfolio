@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap");
 * {
   font-family: "ABeeZee", sans-serif;
+  font-family: "Comic Neue", cursive;
+  font-weight: bolder;
   text-decoration: none;
   margin: 0;
   padding: 0;
@@ -9,6 +13,7 @@
 
 .lightmode {
   color: #000000;
+  background-color: papayawhip;
 }
 
 /* span */
@@ -23,7 +28,7 @@ span {
 
 /* ------------------------Top container ----------------------------------------------- */
 .navbar {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 .navbar > a > img {
   width: 4rem;
@@ -236,7 +241,7 @@ span {
   padding: 0.1rem;
   margin: 0.8rem;
   box-shadow: 0 5px 5px rgb(241, 205, 191);
-  border-radius: 0.4rem;
+  border-radius: 100rem;
   border: 1rem black;
 }
 #project > .row > .col-lg-4 > .card > .plink > img:hover {
@@ -256,16 +261,22 @@ span {
 }
 #footer > .row {
   width: 100%;
+  background-color: inherit;
+}
+#footer > .row > p {
+  background-color: inherit;
 }
 #footer > .row > .col {
   margin: 0;
   padding: 0;
   width: 60%;
+  background-color: inherit;
 }
 #footer > .row > .col > .footimg {
   width: 2rem;
   height: 2rem;
   margin: 1rem;
+  background-color: inherit;
 }
 
 /* -------------------------------------------javascript + viewport------------------------------- */
