@@ -195,7 +195,6 @@ span {
 #project > .row {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
   margin: 0;
   position: relative;
 }
@@ -207,6 +206,7 @@ span {
   border: none;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   color: #000000;
@@ -218,29 +218,29 @@ span {
   color: #000000;
 }
 #project > .row > .col-lg-4 > .card > .text {
-  padding: 0.4rem 0rem;
+  height: inherit;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 #project > .row > .col-lg-4 > .card > .plink {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0.1rem;
+  padding: 1rem;
   position: inherit;
 }
-#project > .row > .col-lg-4 > .card > .plink > a {
-  text-decoration: none;
+#project > .row > .col-lg-4 > .card > .plink > img {
   background-color: orangered;
-  color: cornsilk;
-  width: 7.2rem;
+  width: 3rem;
+  height: 3rem;
   padding: 0.1rem;
   margin: 0.8rem;
-  font-size: 1.4rem;
   box-shadow: 0 5px 5px rgb(241, 205, 191);
   border-radius: 0.4rem;
   border: 1rem black;
 }
-#project > .row > .col-lg-4 > .card > .plink > a:hover {
+#project > .row > .col-lg-4 > .card > .plink > img:hover {
   background-color: cornsilk;
   color: orangered;
 }
@@ -323,7 +323,7 @@ span {
   cursor: pointer;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 991px) {
   span {
     font-size: 1.5rem;
   }
@@ -374,8 +374,6 @@ span {
     border: none;
     margin: 1rem 0px;
     padding: 0;
-    height: -moz-fit-content;
-    height: fit-content;
     font-size: small;
   }
   #project > .card > div {
@@ -383,10 +381,7 @@ span {
     padding: 0;
     font-size: medium;
   }
-  #project > .card > .text {
-    height: 35rem;
-  }
-  #project > .card > .plink > a {
+  #project > .card > .plink > img {
     padding: 0;
     margin: 0 1rem;
   }

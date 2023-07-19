@@ -223,8 +223,9 @@ span {
   > .row {
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
-    margin: 0;      position: relative;
+    // width: 100%;
+    margin: 0;      
+    position: relative;
 
     > .col-lg-4 > .card {
       margin: 1rem 0;
@@ -232,10 +233,12 @@ span {
       transition: 0.1s;
       background-color: inherit;
       border: none;
-
-
+      // box-sizing: border-box;
+      // position: relative;
+      // height: 60vh;
       display: flex;
       flex-direction: column;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       color: #000000;
@@ -253,9 +256,10 @@ span {
       }
 
       > .text {
-        padding: 0.4rem 0rem;
-        
-        }
+        height: inherit;
+        padding: 1rem;
+        box-sizing: border-box;
+      }
 
       > .plink{
         display: flex;
@@ -263,17 +267,17 @@ span {
         align-items: center;
         flex-wrap: wrap;
         
-        padding: 0.1rem;
+        padding: 1rem;
         position: inherit;
 
-        > a {
-          text-decoration: none;
+        > img {
           background-color: orangered;
-          color: cornsilk;
-          width: 7.2rem;
+          // color: cornsilk;
+          width: 3rem;
+          height: 3rem;
           padding: 0.1rem;
           margin: 0.8rem;
-          font-size: 1.4rem;
+          // font-size: 1.4rem;
           box-shadow: 0 5px 5px rgb(241, 205, 191);
           border-radius: 0.4rem;
           border: 1rem black;
@@ -370,7 +374,7 @@ span {
   cursor: pointer;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 991px) {
   span {
     font-size: 1.5rem;
   }
@@ -432,10 +436,11 @@ span {
     }
     > .card {
       // background-color: rgba(255, 68, 0, 0);
+      // height: 10vh;
       border: none;
       margin: 1rem 0px;
       padding: 0;
-      height: fit-content;
+      // height: fit-content;
       font-size: small;
 
       > div {
@@ -443,13 +448,14 @@ span {
         padding: 0;
         font-size: medium;
       }
-      > .text {
-        height: 35rem;
-      }
+      // > .text {
+      //   height: 10vh;
+      // }
 
-      > .plink > a {
+      > .plink > img {
         padding: 0;
         margin: 0 1rem;
+
       }
     }
   }
