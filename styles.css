@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  cursor: pointer;
 }
 
 .lightmode {
@@ -33,6 +32,7 @@ span {
 .navbar > a > img {
   width: 4rem;
   height: 4rem;
+  background-color: rgba(0, 0, 0, 0);
 }
 .navbar > button {
   background-color: orange;
@@ -300,7 +300,7 @@ span {
 }
 
 .customPopup {
-  height: 100%;
+  height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -311,8 +311,9 @@ span {
 }
 
 .popup {
-  height: 30%;
-  width: 40%;
+  height: 25vh;
+  width: 20vw;
+  margin: 2rem;
   background-color: cornsilk;
   z-index: 1000;
   filter: blur(0);
@@ -338,8 +339,8 @@ span {
     font-size: 1.5rem;
   }
   .popup {
-    height: 38%;
-    width: 90%;
+    height: 18%;
+    width: 88%;
   }
   .container-fluid > .frontpagecontent > .col2content > img {
     left: 1rem;
