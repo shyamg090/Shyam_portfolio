@@ -80,10 +80,10 @@ const github1 = () => {
 };
 
 const project2 = () => {
-  window.open("https://foodcarti.netlify.app/", "_blank");
+  window.open("https://moodflix-by-shyam.netlify.app/", "_blank");
 };
 const github2 = () => {
-  window.open("https://github.com/shyamg090/foodcarti/", "_blank");
+  window.open("https://github.com/shyamg090/MoodFlix", "_blank");
 };
 const project3 = () => {
   window.open("https://todo-by-shyam.netlify.app/", "_blank");

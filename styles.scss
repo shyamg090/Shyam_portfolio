@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap");
 
 * {
   font-family: "ABeeZee", sans-serif;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Comic Neue", cursive;
   font-weight: bolder;
   // font-size: 1.02rem;
   text-decoration: none;
@@ -11,7 +11,6 @@
   padding: 0;
   scroll-behavior: smooth;
   // cursor: pointer;
-  
 }
 
 .lightmode {
@@ -47,7 +46,7 @@ span {
 
 .navbar {
   // padding: 0.5rem;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 
   > a > img {
     width: 4rem;
@@ -78,7 +77,7 @@ span {
 .navlinks {
   margin: 0.5rem;
   font-size: 1.2rem;
-  color: #000000;
+  color: inherit;
   &:hover {
     color: orangered;
   }
@@ -86,9 +85,8 @@ span {
 
 /*------------------------------------- frontpage contents ---------------------------------------------*/
 .container-fluid {
-
   .frontpagecontent {
-    padding: .5rem;
+    padding: 0.5rem;
     // border-radius: 2rem;
 
     > .col1content {
@@ -106,14 +104,14 @@ span {
         }
       }
 
-      > .download_div{
-          display: flex;
-          // flex-wrap: wrap;
-          justify-content: flex-start;
-          align-items: center;
-          margin: 2rem 2rem 0 0;
+      > .download_div {
+        display: flex;
+        // flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 2rem 2rem 0 0;
 
-        > .button > button{
+        > .button > button {
           /* color: rgb(255, 255, 255); */
           border-radius: 1rem;
           transition: 1s;
@@ -124,25 +122,25 @@ span {
           padding: 0.5rem;
           margin-right: 1rem;
         }
-  
+
         button:hover {
           background-color: orangered;
           color: cornsilk;
         }
 
-        > .links{
+        > .links {
           display: flex;
           align-items: center;
           margin: 2rem 0;
           // margin: .4rem;
 
-          > img{
+          > img {
             width: 3rem;
             height: 3rem;
             margin: 1rem;
           }
-        } 
-      } 
+        }
+      }
     }
 
     > .col2content > img {
@@ -152,7 +150,7 @@ span {
       // padding: 1rem;
       background-color: #ffc800;
       position: relative;
-      
+
       border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
       /* transition: 1s; */
       animation: morphing 10s infinite;
@@ -223,31 +221,33 @@ span {
 /* -------------------------------------------projects--------------------------------------------- */
 #project {
   margin: 2rem 0 2rem 0;
-  padding: 0.3rem;
+  // padding: 1rem;
   text-align: center;
   letter-spacing: 0.1px;
   font-weight: 500;
+  position: relative;
   // height: 80vh;
 
   > .row {
     display: flex;
     justify-content: space-evenly;
     // width: 100%;
-    margin: 0;      
-    position: relative;
+    margin: 1rem 0;
+    position: inherit;
 
     > .col-lg-4 > .card {
-      margin: 1rem 0;
+      height: 100%;
+      // margin: 1rem 0;
       padding: 1rem;
       transition: 0.1s;
       background-color: inherit;
       border: none;
       // box-sizing: border-box;
-      // position: relative;
+      position: relative;
       // height: 60vh;
       display: flex;
       flex-direction: column;
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       color: #000000;
@@ -255,6 +255,8 @@ span {
       box-shadow: 0 5px 5px rgba(255, 68, 0, 0.536);
 
       > div {
+        height: inherit;
+        padding: 0.5rem;
         // padding: 1rem;
         // justify-content: center;
 
@@ -266,26 +268,27 @@ span {
 
       > .text {
         height: inherit;
-        // padding: 1rem;
+        padding: 0.5rem;
         box-sizing: border-box;
       }
 
-      > .plink{
+      > .plink {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        
-        padding: 1rem;
+        height: inherit;
+
         position: inherit;
 
         > img {
           background-color: orangered;
+          margin: 0.5rem;
           // color: cornsilk;
           width: 3rem;
           height: 3rem;
-          padding: 0.1rem;
-          margin: 0.8rem;
+          // padding: 0.1rem;
+          // margin: 0.8rem;
           // font-size: 1.4rem;
           box-shadow: 0 5px 5px rgb(241, 205, 191);
           border-radius: 100rem;
@@ -310,11 +313,12 @@ span {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  position: relative;
 
   > .row {
     width: 100%;
     background-color: inherit;
-    >p{
+    > p {
       background-color: inherit;
     }
     > .col {
@@ -323,13 +327,12 @@ span {
       width: 60%;
       background-color: inherit;
 
-        > .footimg {
-          width: 2rem;
-          height: 2rem;
-          margin: 1rem;
-          background-color: inherit;
-        }
-
+      > .footimg {
+        width: 2rem;
+        height: 2rem;
+        margin: 1rem;
+        background-color: inherit;
+      }
     }
   }
 }
@@ -381,8 +384,8 @@ span {
 
 .btnPop {
   background-color: red;
-  color: azure;
-  padding: 1rem 2rem;
+  color: black;
+  padding: 1rem;
   font-size: 1rem;
   /* margin-top: 3rem; */
   border-radius: 1rem;
@@ -394,12 +397,12 @@ span {
     font-size: 1.5rem;
   }
   .popup {
-      height: 18%;
-      width: 88%;
+    height: 18%;
+    width: 88%;
   }
 
-  .container-fluid > .frontpagecontent > .col2content{
-    >img{
+  .container-fluid > .frontpagecontent > .col2content {
+    > img {
       left: 1rem;
     }
   }
@@ -408,7 +411,7 @@ span {
     text-align: left;
     padding: 1rem;
 
-     >.download_div {
+    > .download_div {
       display: flex;
       flex-wrap: wrap;
       // flex-direction: column;
@@ -418,12 +421,12 @@ span {
         // margin-right: 3rem;
       }
 
-      > .links > img{
+      > .links > img {
         width: 2rem;
         height: 2rem;
-        margin: .5rem;
+        margin: 0.5rem;
       }
-     }
+    }
   }
 
   #aboutme {
@@ -446,38 +449,42 @@ span {
   #project {
     margin: 0rem;
     padding: 0.1rem;
-    > h3 {
-      font-size: 2rem;
-    }
-    > .card {
-      // background-color: rgba(255, 68, 0, 0);
-      // height: 10vh;
-      border: none;
-      margin: 1rem 0px;
-      padding: 0;
-      // height: fit-content;
-      font-size: small;
-
-      > div {
-        margin: 1rem 0;
-        padding: 0;
-        font-size: medium;
+    text-align: center;
+    > .row > .col-lg-4 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      > h3 {
+        font-size: 1.5rem;
       }
-      // > .text {
-      //   height: 10vh;
-      // }
 
-      > .plink > img {
-        padding: 0;
-        margin: 0 1rem;
+      > .card {
+        margin-top: 1rem;
+        padding: .5rem;
+        font-size: small;
+        height: 100%;
 
+        > div {
+          // padding: 0;
+          font-size: medium;
+        }
+        // > .text {
+        //   height: 10vh;
+        // }
+
+        > .plink > img {
+          // padding: 0;
+          margin: 0 1.5rem;
+          height: 2rem;
+          width: 2rem;
+        }
       }
     }
   }
 
-  #footer > .row > .col >.footimg{
+  #footer > .row > .col > .footimg {
     width: 1.5rem;
     height: 1.5rem;
-    margin: .5rem;
+    margin: 0.5rem;
   }
 }

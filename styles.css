@@ -50,7 +50,7 @@ span {
 .navlinks {
   margin: 0.5rem;
   font-size: 1.2rem;
-  color: #000000;
+  color: inherit;
 }
 .navlinks:hover {
   color: orangered;
@@ -192,31 +192,35 @@ span {
 /* -------------------------------------------projects--------------------------------------------- */
 #project {
   margin: 2rem 0 2rem 0;
-  padding: 0.3rem;
   text-align: center;
   letter-spacing: 0.1px;
   font-weight: 500;
+  position: relative;
 }
 #project > .row {
   display: flex;
   justify-content: space-evenly;
-  margin: 0;
-  position: relative;
+  margin: 1rem 0;
+  position: inherit;
 }
 #project > .row > .col-lg-4 > .card {
-  margin: 1rem 0;
+  height: 100%;
   padding: 1rem;
   transition: 0.1s;
   background-color: inherit;
   border: none;
+  position: relative;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   color: #000000;
   background-color: cornsilk;
   box-shadow: 0 5px 5px rgba(255, 68, 0, 0.536);
+}
+#project > .row > .col-lg-4 > .card > div {
+  height: inherit;
+  padding: 0.5rem;
 }
 #project > .row > .col-lg-4 > .card > div > h3 {
   font-size: 1.5rem;
@@ -224,6 +228,7 @@ span {
 }
 #project > .row > .col-lg-4 > .card > .text {
   height: inherit;
+  padding: 0.5rem;
   box-sizing: border-box;
 }
 #project > .row > .col-lg-4 > .card > .plink {
@@ -231,15 +236,14 @@ span {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 1rem;
+  height: inherit;
   position: inherit;
 }
 #project > .row > .col-lg-4 > .card > .plink > img {
   background-color: orangered;
+  margin: 0.5rem;
   width: 3rem;
   height: 3rem;
-  padding: 0.1rem;
-  margin: 0.8rem;
   box-shadow: 0 5px 5px rgb(241, 205, 191);
   border-radius: 100rem;
   border: 1rem black;
@@ -258,6 +262,7 @@ span {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  position: relative;
 }
 #footer > .row {
   width: 100%;
@@ -326,8 +331,8 @@ span {
 
 .btnPop {
   background-color: red;
-  color: azure;
-  padding: 1rem 2rem;
+  color: black;
+  padding: 1rem;
   font-size: 1rem;
   /* margin-top: 3rem; */
   border-radius: 1rem;
@@ -377,24 +382,29 @@ span {
   #project {
     margin: 0rem;
     padding: 0.1rem;
+    text-align: center;
   }
-  #project > h3 {
-    font-size: 2rem;
+  #project > .row > .col-lg-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
-  #project > .card {
-    border: none;
-    margin: 1rem 0px;
-    padding: 0;
+  #project > .row > .col-lg-4 > h3 {
+    font-size: 1.5rem;
+  }
+  #project > .row > .col-lg-4 > .card {
+    margin-top: 1rem;
+    padding: 0.5rem;
     font-size: small;
+    height: 100%;
   }
-  #project > .card > div {
-    margin: 1rem 0;
-    padding: 0;
+  #project > .row > .col-lg-4 > .card > div {
     font-size: medium;
   }
-  #project > .card > .plink > img {
-    padding: 0;
-    margin: 0 1rem;
+  #project > .row > .col-lg-4 > .card > .plink > img {
+    margin: 0 1.5rem;
+    height: 2rem;
+    width: 2rem;
   }
   #footer > .row > .col > .footimg {
     width: 1.5rem;
