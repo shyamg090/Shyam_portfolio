@@ -77,6 +77,7 @@ span {
 
 .navlinks {
   margin: 0.5rem;
+  // background-color: inherit;
   font-size: 1.2rem;
   color: inherit;
   &:hover {
@@ -366,21 +367,21 @@ span {
   align-items: center;
   position: absolute;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.737254902);
+  background-color: rgba(0, 0, 0, 0.858);
 }
 
 .popup {
   height: 25vh;
   width: 20vw;
   margin: 2rem;
-  background-color: inherit;
+  // background-color: rgba(101, 70, 70, 0.901)t;
+  color: white;
   z-index: 1000;
-  filter: blur(0);
-  box-shadow: 0 5px 5px orangered;
-  padding: 1rem;
+  // box-shadow: 0 5px 5px orangered;
+  // padding: 1rem;
   text-align: center;
-  border-radius: 1rem;
-  display: none;
+  // border-radius: 1rem;
+  // display: none;
 }
 
 .btnPop {
