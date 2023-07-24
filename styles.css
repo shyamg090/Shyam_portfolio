@@ -45,6 +45,7 @@ span {
 }
 .navbar > #navbarNav > .navbar-nav > .nav-item {
   padding: 0.3rem;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .navlinks {
@@ -319,7 +320,7 @@ span {
   height: 25vh;
   width: 20vw;
   margin: 2rem;
-  background-color: cornsilk;
+  background-color: inherit;
   z-index: 1000;
   filter: blur(0);
   box-shadow: 0 5px 5px orangered;
