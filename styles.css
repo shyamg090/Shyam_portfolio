@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap");
 * {
-  font-family: "ABeeZee", sans-serif;
   font-family: "Comic Neue", cursive;
   font-weight: bolder;
   text-decoration: none;
@@ -28,6 +27,7 @@ span {
 /* ------------------------Top container ----------------------------------------------- */
 .navbar {
   margin: 0.5rem 0;
+  background-color: rgba(255, 0, 0, 0);
 }
 .navbar > a > img {
   width: 4rem;
@@ -45,11 +45,11 @@ span {
 }
 .navbar > #navbarNav > .navbar-nav > .nav-item {
   padding: 0.3rem;
-  background-color: rgba(0, 0, 0, 0);
 }
 
 .navlinks {
   margin: 0.5rem;
+  background-color: rgba(255, 0, 0, 0);
   font-size: 1.2rem;
   color: inherit;
 }
@@ -141,8 +141,6 @@ span {
 }
 #aboutme > .row {
   padding: 1rem;
-  /* box-shadow: 0 5px 5px rgba(255, 68, 0, 0.536); */
-  /* border-radius: 1rem; */
 }
 #aboutme > .row > .row-fig {
   padding: 0;
@@ -151,7 +149,6 @@ span {
   width: 10rem;
   height: 10rem;
   padding: 1.5rem;
-  /* margin: .5rem; */
   animation: mover linear infinite 1s alternate;
   /* alternative -- to make to move both up and down */
 }
@@ -176,11 +173,13 @@ span {
   word-spacing: 1px;
   font-weight: 500;
 }
-#features > .row > .hidden > img {
+#features > .row > .hidden h3 {
+  text-shadow: 0 5px 6px orangered;
+}
+#features > .row > .hidden img {
   width: 10rem;
   height: 10rem;
   padding: 1.5rem;
-  /* margin: .5rem; */
   animation: mover linear infinite 1s alternate;
   /* alternative -- to make to move both up and down */
 }
@@ -207,7 +206,6 @@ span {
 #project > .row > .col-lg-4 > .card {
   height: 100%;
   padding: 1rem;
-  transition: 0.1s;
   background-color: inherit;
   border: none;
   position: relative;
@@ -215,9 +213,13 @@ span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #000000;
-  background-color: cornsilk;
-  box-shadow: 0 5px 5px rgba(255, 68, 0, 0.536);
+  color: inherit;
+  background-color: inherit;
+  box-shadow: 0 5px 5px rgb(255, 68, 0);
+  transition: 0.5s;
+}
+#project > .row > .col-lg-4 > .card:hover {
+  transform: translateY(-1rem);
 }
 #project > .row > .col-lg-4 > .card > div {
   height: inherit;
@@ -225,7 +227,7 @@ span {
 }
 #project > .row > .col-lg-4 > .card > div > h3 {
   font-size: 1.5rem;
-  color: #000000;
+  color: inherit;
 }
 #project > .row > .col-lg-4 > .card > .text {
   height: inherit;
@@ -245,7 +247,7 @@ span {
   margin: 0.5rem;
   width: 3rem;
   height: 3rem;
-  box-shadow: 0 5px 5px rgb(241, 205, 191);
+  box-shadow: 0 5px 5px rgba(241, 205, 191, 0.537);
   border-radius: 100rem;
   border: 1rem black;
 }

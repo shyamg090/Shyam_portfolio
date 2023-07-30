@@ -2,15 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap");
 
 * {
-  font-family: "ABeeZee", sans-serif;
   font-family: "Comic Neue", cursive;
   font-weight: bolder;
-  // font-size: 1.02rem;
   text-decoration: none;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  // cursor: pointer;
 }
 
 .lightmode {
@@ -22,7 +19,6 @@
   width: 10rem;
   height: 10rem;
   padding: 1.5rem;
-  /* margin: .5rem; */
   animation: mover linear infinite 1s alternate;
   /* alternative -- to make to move both up and down */
   @keyframes mover {
@@ -47,6 +43,7 @@ span {
 .navbar {
   // padding: 0.5rem;
   margin: 0.5rem 0;
+  background-color: rgba(255, 0, 0, 0);
 
   > a > img {
     width: 4rem;
@@ -70,14 +67,13 @@ span {
   > #navbarNav {
     > .navbar-nav > .nav-item {
       padding: 0.3rem;
-      background-color: #00000000;
     }
   }
 }
 
 .navlinks {
   margin: 0.5rem;
-  // background-color: inherit;
+  background-color: rgba(255, 0, 0, 0);
   font-size: 1.2rem;
   color: inherit;
   &:hover {
@@ -187,8 +183,6 @@ span {
   > .row {
     padding: 1rem;
 
-    /* box-shadow: 0 5px 5px rgba(255, 68, 0, 0.536); */
-    /* border-radius: 1rem; */
     > .row-fig {
       padding: 0;
     }
@@ -215,8 +209,14 @@ span {
   word-spacing: 1px;
   font-weight: 500;
 
-  > .row > .hidden > img {
-    @include images;
+  > .row > .hidden {
+    h3 {
+      text-shadow: 0 5px 6px orangered;
+    }
+    img {
+      @include images;
+      // box-shadow: 0 5px orangered;
+    }
   }
 }
 
@@ -241,7 +241,6 @@ span {
       height: 100%;
       // margin: 1rem 0;
       padding: 1rem;
-      transition: 0.1s;
       background-color: inherit;
       border: none;
       // box-sizing: border-box;
@@ -252,9 +251,13 @@ span {
       // flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      color: #000000;
-      background-color: cornsilk;
-      box-shadow: 0 5px 5px rgba(255, 68, 0, 0.536);
+      color: inherit;
+      background-color: inherit;
+      box-shadow: 0 5px 5px rgb(255, 68, 0);
+      transition: .5s;
+      &:hover{
+        transform: translateY(-1rem);
+      }
 
       > div {
         height: inherit;
@@ -264,7 +267,7 @@ span {
 
         > h3 {
           font-size: 1.5rem;
-          color: #000000;
+          color: inherit;
         }
       }
 
@@ -292,7 +295,7 @@ span {
           // padding: 0.1rem;
           // margin: 0.8rem;
           // font-size: 1.4rem;
-          box-shadow: 0 5px 5px rgb(241, 205, 191);
+          box-shadow: 0 5px 5px rgba(241, 205, 191, 0.537);
           border-radius: 100rem;
           border: 1rem black;
 
@@ -462,7 +465,7 @@ span {
 
       > .card {
         margin-top: 1rem;
-        padding: .5rem;
+        padding: 0.5rem;
         font-size: small;
         height: 100%;
 

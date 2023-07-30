@@ -80,7 +80,7 @@ const github1 = () => {
 };
 
 const project2 = () => {
-  window.open("https://moodflix-by-shyam.netlify.app/", "_blank");
+  window.open("https://moodmovie.netlify.app/", "_blank");
 };
 const github2 = () => {
   window.open("https://github.com/shyamg090/MoodFlix", "_blank");
