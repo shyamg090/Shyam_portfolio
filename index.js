@@ -54,7 +54,7 @@ animation.forEach((div) => observer.observe(div));
 // https://drive.google.com/file/d/1-uP_WQPEHEijsOPtSJ4-WmYsHgyIuG8H/view?usp=share_link
 const downloadFun = () => {
   window.open(
-    "https://drive.google.com/file/d/1LbbOrMDGsHSHi9E330VhLO8qAhKmAU4B/view?usp=sharing",
+    "https://drive.google.com/file/d/1WxbAlOW01f-bFrof7awZ2b2_TlaBdsCs/view?usp=sharing",
     "_blank"
   );
 };
