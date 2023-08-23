@@ -104,5 +104,5 @@ window.onload = () => {
 const popupClicked = () => {
   popup.style.display = "none";
   popupDiv.style.backgroundColor = "rgba(0, 0, 0, 0)";
-  popupDiv.style.zIndex = "-1";
+  popupDiv.style.zIndex = "-10000";
 };
