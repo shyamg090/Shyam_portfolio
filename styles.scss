@@ -210,9 +210,6 @@ span {
   font-weight: 500;
 
   > .row > .hidden {
-    h3 {
-      text-shadow: 0 5px 6px orangered;
-    }
     img {
       @include images;
       // box-shadow: 0 5px orangered;

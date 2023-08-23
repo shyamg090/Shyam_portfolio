@@ -173,9 +173,6 @@ span {
   word-spacing: 1px;
   font-weight: 500;
 }
-#features > .row > .hidden h3 {
-  text-shadow: 0 5px 6px orangered;
-}
 #features > .row > .hidden img {
   width: 10rem;
   height: 10rem;
