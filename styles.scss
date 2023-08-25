@@ -41,10 +41,16 @@ span {
 
 /* ------------------------Top container ----------------------------------------------- */
 
+
 .navbar {
   // padding: 0.5rem;
   margin: 0.5rem 0;
   background-color: rgba(255, 0, 0, 0);
+  position: sticky;
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  top: 0;
+  width: 100%;
 
   >a>img {
     width: 4rem;
@@ -72,16 +78,22 @@ span {
   }
 }
 
-.navlinks {
-  margin: 0.5rem;
-  background-color: rgba(255, 0, 0, 0);
-  font-size: 1.2rem;
-  color: inherit;
+.nav-item {
+  background-color: #00000000;
 
-  &:hover {
-    color: orangered;
+  .navlinks {
+    margin: 0.5rem;
+    background-color: rgba(255, 0, 0, 0);
+    font-size: 1.2rem;
+    color: inherit;
+
+    &:hover {
+      color: orangered;
+    }
   }
 }
+
+
 
 /*------------------------------------- frontpage contents ---------------------------------------------*/
 .container-fluid {
@@ -439,11 +451,12 @@ span {
   .navbar {
     >#navbarNav {
       >.navbar-nav {
-        width: 99%;
+        width: 100%;
         align-items: center;
       }
     }
   }
+
 
   .container-fluid>.frontpagecontent>.col2content {
     >img {

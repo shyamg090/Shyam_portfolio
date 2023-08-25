@@ -28,6 +28,12 @@ span {
 .navbar {
   margin: 0.5rem 0;
   background-color: rgba(255, 0, 0, 0);
+  position: sticky;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 100;
+  top: 0;
+  width: 100%;
 }
 .navbar > a > img {
   width: 4rem;
@@ -47,13 +53,16 @@ span {
   padding: 0.3rem;
 }
 
-.navlinks {
+.nav-item {
+  background-color: rgba(0, 0, 0, 0);
+}
+.nav-item .navlinks {
   margin: 0.5rem;
   background-color: rgba(255, 0, 0, 0);
   font-size: 1.2rem;
   color: inherit;
 }
-.navlinks:hover {
+.nav-item .navlinks:hover {
   color: orangered;
 }
 
@@ -357,7 +366,7 @@ span {
     width: 88%;
   }
   .navbar > #navbarNav > .navbar-nav {
-    width: 99%;
+    width: 100%;
     align-items: center;
   }
   .container-fluid > .frontpagecontent > .col2content > img {
