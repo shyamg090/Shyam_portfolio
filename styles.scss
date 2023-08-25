@@ -20,6 +20,7 @@
   height: 10rem;
   padding: 1.5rem;
   animation: mover linear infinite 1s alternate;
+
   /* alternative -- to make to move both up and down */
   @keyframes mover {
     to {
@@ -45,27 +46,27 @@ span {
   margin: 0.5rem 0;
   background-color: rgba(255, 0, 0, 0);
 
-  > a > img {
+  >a>img {
     width: 4rem;
     height: 4rem;
     background-color: #00000000;
     // margin: 0 1rem;
   }
 
-  > button {
+  >button {
     background-color: orange;
     color: #000000;
     border: none;
     margin: 0 1rem;
 
-    > .navbar-toggler-icon {
+    >.navbar-toggler-icon {
       font-size: 20px;
       // margin: 0 1rem;
     }
   }
 
-  > #navbarNav {
-    > .navbar-nav > .nav-item {
+  >#navbarNav {
+    >.navbar-nav>.nav-item {
       padding: 0.3rem;
     }
   }
@@ -76,6 +77,7 @@ span {
   background-color: rgba(255, 0, 0, 0);
   font-size: 1.2rem;
   color: inherit;
+
   &:hover {
     color: orangered;
   }
@@ -87,29 +89,29 @@ span {
     padding: 0.5rem;
     // border-radius: 2rem;
 
-    > .col1content {
+    >.col1content {
       padding: 2.5rem;
       text-align: left;
       font-weight: 500;
       animation: ease-in-out;
 
-      > h1 {
+      >h1 {
         font-weight: 1000;
         word-spacing: 4px;
 
-        > span {
+        >span {
           font-size: inherit;
         }
       }
 
-      > .download_div {
+      >.download_div {
         display: flex;
         // flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
         margin: 2rem 2rem 0 0;
 
-        > .button > button {
+        >.button>button {
           /* color: rgb(255, 255, 255); */
           border-radius: 1rem;
           transition: 1s;
@@ -126,13 +128,13 @@ span {
           color: cornsilk;
         }
 
-        > .links {
+        >.links {
           display: flex;
           align-items: center;
           margin: 2rem 0;
           // margin: .4rem;
 
-          > img {
+          >img {
             width: 3rem;
             height: 3rem;
             margin: 1rem;
@@ -141,7 +143,7 @@ span {
       }
     }
 
-    > .col2content > img {
+    >.col2content>img {
       width: 90%;
       height: 90%;
       left: 4rem;
@@ -158,12 +160,15 @@ span {
         0% {
           border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
         }
+
         25% {
           border-radius: 58% 42% 75% 25%/76% 46% 54% 24%;
         }
+
         50% {
           border-radius: 50% 50% 33% 67%/55% 27% 73% 45%;
         }
+
         75% {
           border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
         }
@@ -180,20 +185,21 @@ span {
   word-spacing: 1px;
   font-weight: 500;
 
-  > .row {
+  >.row {
     padding: 1rem;
 
-    > .row-fig {
+    >.row-fig {
       padding: 0;
     }
 
-    > .hidden > img {
+    >.hidden>img {
       @include images;
     }
 
-    > .row-text {
+    >.row-text {
       text-align: left;
-      > p {
+
+      >p {
         text-align: left;
         font-size: 1.1rem;
       }
@@ -209,7 +215,7 @@ span {
   word-spacing: 1px;
   font-weight: 500;
 
-  > .row > .hidden {
+  >.row>.hidden {
     img {
       @include images;
       // box-shadow: 0 5px orangered;
@@ -225,65 +231,87 @@ span {
   letter-spacing: 0.1px;
   font-weight: 500;
   position: relative;
-  // height: 80vh;
+  height: 90vh;
 
-  > .row {
+  >.row {
     display: flex;
     justify-content: space-evenly;
     // width: 100%;
-    margin: 1rem 0;
+    margin: 2rem 0;
     position: inherit;
 
-    > .col-lg-4 > .card {
+    >.col-lg-4>.card {
       height: 100%;
-      // margin: 1rem 0;
-      padding: 1rem;
+      padding: .5rem;
       background-color: inherit;
       border: none;
-      // box-sizing: border-box;
       position: relative;
-      // height: 60vh;
       display: flex;
       flex-direction: column;
-      // flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       color: inherit;
       background-color: inherit;
       box-shadow: 0 5px 5px rgb(255, 68, 0);
       transition: .5s;
-      &:hover{
-        transform: translateY(-1rem);
-      }
 
-      > div {
-        height: inherit;
-        padding: 0.5rem;
-        // padding: 1rem;
-        // justify-content: center;
+      // &:hover {
+      //   transform: translateY(-.5rem);
+      // }
 
-        > h3 {
-          font-size: 1.5rem;
-          color: inherit;
+      >.div-card-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+
+        div {
+          padding: 0.5rem 1.5rem;
+          // height: 20%;
+
+          >strong {
+            font-size: 1.5rem;
+            color: inherit;
+          }
         }
+
+        >.card-img {
+          padding: 0;
+          margin: 0;
+          position: relative;
+          width: 95%;
+          height: 80%;
+          background-color: #000000;
+
+          >img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+
+
+        .text {
+          // height: inherit;
+          padding: 0.5rem;
+          box-sizing: border-box;
+        }
+
       }
 
-      > .text {
-        height: inherit;
-        padding: 0.5rem;
-        box-sizing: border-box;
-      }
 
-      > .plink {
+      >.plink {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        height: inherit;
+        padding: 1rem;
+        // height: inherit;
 
         position: inherit;
 
-        > img {
+        >img {
           background-color: orangered;
           margin: 0.5rem;
           // color: cornsilk;
@@ -317,19 +345,21 @@ span {
   flex-wrap: wrap;
   position: relative;
 
-  > .row {
+  >.row {
     width: 100%;
     background-color: inherit;
-    > p {
+
+    >p {
       background-color: inherit;
     }
-    > .col {
+
+    >.col {
       margin: 0;
       padding: 0;
       width: 60%;
       background-color: inherit;
 
-      > .footimg {
+      >.footimg {
         width: 2rem;
         height: 2rem;
         margin: 1rem;
@@ -360,8 +390,8 @@ span {
 }
 
 .customPopup {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width:100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -398,32 +428,33 @@ span {
   span {
     font-size: 1.5rem;
   }
+
   .popup {
     height: 18%;
     width: 88%;
   }
 
-  .container-fluid > .frontpagecontent > .col2content {
-    > img {
+  .container-fluid>.frontpagecontent>.col2content {
+    >img {
       left: 1rem;
     }
   }
 
-  .container-fluid > .frontpagecontent > .col1content {
+  .container-fluid>.frontpagecontent>.col1content {
     text-align: left;
     padding: 1rem;
 
-    > .download_div {
+    >.download_div {
       display: flex;
       flex-wrap: wrap;
       // flex-direction: column;
 
-      > .button > button {
+      >.button>button {
         font-size: 1rem;
         // margin-right: 3rem;
       }
 
-      > .links > img {
+      >.links>img {
         width: 2rem;
         height: 2rem;
         margin: 0.5rem;
@@ -437,10 +468,11 @@ span {
     text-align: center;
     padding: 1rem;
 
-    > .row {
-      > .row-text {
+    >.row {
+      >.row-text {
         text-align: center;
-        > p {
+
+        >p {
           text-align: center;
           font-size: 1rem;
         }
@@ -452,29 +484,38 @@ span {
     margin: 0rem;
     padding: 0.1rem;
     text-align: center;
-    > .row > .col-lg-4 {
+    height: 100%;
+
+    >.row >.col-lg-4 {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      > h3 {
+
+      >h3 {
         font-size: 1.5rem;
       }
 
-      > .card {
+      >.card {
         margin-top: 1rem;
         padding: 0.5rem;
         font-size: small;
         height: 100%;
 
-        > div {
-          // padding: 0;
-          font-size: medium;
+        >.div-card-text {
+          >.card-img{
+              width: 100%;
+              height: 90%;
+          }
+          >.div {
+            // padding: 0;
+            font-size: medium;
+          }
+          >.text > h4{
+            font-size: 1.1rem;
+          }
         }
-        // > .text {
-        //   height: 10vh;
-        // }
 
-        > .plink > img {
+        >.plink>img {
           // padding: 0;
           margin: 0 1.5rem;
           height: 2rem;
@@ -484,7 +525,7 @@ span {
     }
   }
 
-  #footer > .row > .col > .footimg {
+  #footer>.row>.col>.footimg {
     width: 1.5rem;
     height: 1.5rem;
     margin: 0.5rem;
