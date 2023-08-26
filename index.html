@@ -41,12 +41,12 @@
 
 </head>
 
-<body class="lightmode">
+<body class="darkmode">
 
     <div class="customPopup">
         <div class="popup">
             <h3>
-                1.Press the Sun for DarkMode
+                1.Press the Sun to change Modes <br>(Light / Dark)
             </h3>
             <button class="btnPop" onclick="popupClicked()">Ok</button>
         </div>
@@ -54,38 +54,38 @@
 
     <div id="Home">
 
-            <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg ">
 
-                <a class="navbar-brand ms-2" href="#">
-                    <img onclick="darkmodeFun()" alt="Darkmode" title="Dark Mode" src="pics\icons8-sun.gif"
-                        class="nav-link navlinks">
-                </a>
+            <a class="navbar-brand ms-2" href="#">
+                <img onclick="darkmodeFun()" alt="Darkmode" title="Dark Mode" src="pics\icons8-sun.gif"
+                    class="nav-link navlinks">
+            </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto me-5">
-                        <li class="nav-item">
-                            <a class="nav-link navlinks " href="#Home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navlinks " href="#aboutme">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navlinks " href="#features">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navlinks " href="#project">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navlinks " href="#footer">ContactMe</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-5">
+                    <li class="nav-item">
+                        <a class="nav-link navlinks " href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navlinks " href="#aboutme">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navlinks " href="#features">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navlinks " href="#project">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navlinks " href="#footer">ContactMe</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
 
 
@@ -359,45 +359,84 @@
 
                     </div>
                 </div>
+
+                <!-- <div class="col-lg-4 hidden">
+                    <div class="card">
+                        <div class="div-card-text">
+                            <div>
+                                <strong>
+                                    Todo-List
+                                </strong>
+                            </div>
+                            <div class="card-img">
+                                <img src="pics\todo-pics.png" alt="todo-img">
+                            </div>
+                            <div class="text">
+                                <h4>This is a Todo-List that is
+                                    built using React.JS and pure CSS.
+                                    This is responsive and can store all of your
+                                    todo's in browsers local storage.
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="plink">
+                            <img onclick="project3()" src="pics\internet-icon.png" alt="internet">
+                            <img onclick="github3()" src="pics\github-icon.png" alt="github">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 hidden">
+                    <div class="card">
+                        <div class="div-card-text">
+                            <div>
+                                <strong>
+                                    Todo-List
+                                </strong>
+                            </div>
+                            <div class="card-img">
+                                <img src="pics\todo-pics.png" alt="todo-img">
+                            </div>
+                            <div class="text">
+                                <h4>This is a Todo-List that is
+                                    built using React.JS and pure CSS.
+                                    This is responsive and can store all of your
+                                    todo's in browsers local storage.
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="plink">
+                            <img onclick="project3()" src="pics\internet-icon.png" alt="internet">
+                            <img onclick="github3()" src="pics\github-icon.png" alt="github">
+                        </div>
+
+                    </div>
+                </div> -->
+
             </div>
-            <!-- <div class="row">
-            <div class="col-lg-4 ">
-                <div class="card">
-                    <div class="card-img">
-                        <img class="projectimg" src="" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h3> 
-                            
-                        </h3>
-                    </div>
-                </div>
-            </div> -->
-            <!-- <div class="col-lg-4 ">
-                <div class="card">
-                    <div class="card-img">
-                        <img class="projectimg" src="" alt="pic">
-                    </div>
-                    <div class="card-body">
-                        <h3> 
-                            
-                        </h3>
-                    </div>
-                </div>
-            </div> -->
-            <!-- <div class="col-lg-4 ">
-                <div class="card">
-                    <div class="card-img">
-                        <img class="projectimg" src="" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h3> 
-                           
-                        </h3>
-                    </div>
-                </div>
-            </div>           -->
         </div>
+
+        <div id="quotes">
+            <h3 class="hidden">
+                <span>Q</span>
+                <span>U</span>
+                <span>O</span>
+                <span>T</span>
+                <span>E</span>
+            </h3>
+
+            <div class="row">
+                <h1 class="quote-line hidden">
+                    "Be the designer of your world and not merely the consumer of it."
+                </h1>
+                <div class="author-flex">
+                    <span>-</span>
+                    <h2 class="author">James Clear</h2>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <footer id="footer">

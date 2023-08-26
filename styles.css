@@ -9,9 +9,10 @@
   scroll-behavior: smooth;
 }
 
-.lightmode {
-  color: #000000;
-  background-color: papayawhip;
+.darkmode {
+  color: white;
+  background-color: #03041d;
+  /* #03032d */
 }
 
 /* span */
@@ -201,7 +202,6 @@ span {
   letter-spacing: 0.1px;
   font-weight: 500;
   position: relative;
-  height: 90vh;
 }
 #project > .row {
   display: flex;
@@ -210,6 +210,7 @@ span {
   position: inherit;
 }
 #project > .row > .col-lg-4 > .card {
+  border-radius: 1rem;
   height: 100%;
   padding: 0.5rem;
   background-color: inherit;
@@ -276,6 +277,37 @@ span {
   color: orangered;
 }
 
+/* -----------------------------------------------------Qutoes-----------------------------------------*/
+#quotes {
+  margin: 3rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40vh;
+}
+#quotes > .row {
+  margin: 2rem 0 0 0;
+  box-shadow: 0 5px 5px rgb(255, 68, 0);
+  border-radius: 1rem;
+}
+#quotes > .row > .quote-line {
+  margin: 1rem 0 0.5rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+#quotes > .row > .author-flex {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1rem;
+}
+#quotes > .row > .author-flex h2 {
+  font-size: 1.2rem;
+  margin: 0 0 0 0.5rem;
+}
+
 /* -----------------------------------------------------footer-----------------------------------------*/
 #footer {
   padding: 1.5rem 0 0 0;
@@ -308,11 +340,10 @@ span {
 }
 
 /* -------------------------------------------javascript + viewport------------------------------- */
-/* dark mode from js */
-.darkmode {
-  color: white;
-  background-color: #03041d;
-  /* #03032d */
+/* light mode from js */
+.lightmode {
+  color: #000000;
+  background-color: papayawhip;
 }
 
 /* scroll animations */
@@ -435,6 +466,9 @@ span {
     margin: 0 1.5rem;
     height: 2rem;
     width: 2rem;
+  }
+  #quotes > .row {
+    width: 90%;
   }
   #footer > .row > .col > .footimg {
     width: 1.5rem;
