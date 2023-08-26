@@ -94,15 +94,13 @@ const github3 = () => {
 
 // ---------------pop up ---------------------------------------------------
 const popupDiv = document.querySelector(".customPopup");
-const popup = document.querySelector(".popup");
+// const popup = document.querySelector(".popup");
 
 window.onload = () => {
-  console.log("helloloaded");
+  // console.log("helloloaded");
   popup.style.display = "block";
 };
 
 const popupClicked = () => {
-  popup.style.display = "none";
-  popupDiv.style.backgroundColor = "rgba(0, 0, 0, 0)";
-  popupDiv.style.zIndex = "-10000";
+  popupDiv.style.display = "none";
 };
