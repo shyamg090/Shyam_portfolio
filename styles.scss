@@ -450,6 +450,7 @@ span {
   position: absolute;
   z-index: 999;
   background-color: rgba(0, 0, 0, 0.858);
+  backdrop-filter: blur(5px);
 }
 
 .popup {
